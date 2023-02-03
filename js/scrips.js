@@ -89,14 +89,15 @@ accordionHeader.forEach(accordion => {
     })
 })
 
-// Ссылки на секции(на мониторах)
+// Ссылки на секции
 const linksDesktop = document.querySelectorAll('a[href*="#"]');
+
 for(let link of linksDesktop) {
     link.addEventListener('click', function(e) {
         e.preventDefault();
 
         const blockID = link.getAttribute('href');
-        
+
         if(e.target.classList.contains('linkDesktop')) {
             document.querySelector('' + blockID).scrollIntoView({
                 behavior: "smooth",
@@ -122,5 +123,3 @@ for(let link of linksDesktop) {
         }    
     })
 }
-
-// Ссылки на секции(на мониторах)

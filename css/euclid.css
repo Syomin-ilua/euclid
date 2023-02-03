@@ -616,6 +616,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 36px;
   color: #CACACA;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  transition: all 0.3s;
+  color: #f2f2f2;
 }
 .footer__network_links {
   display: flex;
