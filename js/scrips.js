@@ -16,6 +16,10 @@ btnBurger.addEventListener('click', function(e) {
         document.body.style.position = '';
         document.body.style.top = '';
     }
+
+    if(seacrhForm.classList.contains('active')) {
+        seacrhForm.classList.remove('active');
+    }
 });
 
 // Основной слайдер
@@ -123,3 +127,36 @@ for(let link of linksDesktop) {
         }    
     })
 }
+
+const searchBtn = document.querySelectorAll('.search');
+const searchCloseButton = document.querySelector('.search__close_btn');
+const seacrhForm = document.querySelector('.search__form');
+const searchButton = document.querySelector('.search__button');
+
+searchBtn.forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if(btnBurger.classList.contains('active')) {
+            btnBurger.classList.remove('active');
+            menuLinks.classList.remove('active');
+            document.body.style.position = '';
+            document.body.style.top = '';
+        }
+
+        seacrhForm.classList.add('active');
+
+    })
+});
+
+searchCloseButton.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    seacrhForm.classList.remove('active');
+});
+
+searchButton.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    
+});
