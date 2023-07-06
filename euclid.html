@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="web icon" type="png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/euclid.css">
+    <title>Евклид</title>
+</head>
+<body>
+    
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__cap">
+            <div class="header__container">
+                <!-- бургер меню -->
+                <div class="burger__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+    
+                <div class="menu__links">
+                    <div class="links">
+                        <div class="link__wrap">
+                            <a class="link linkMobile" href="#about">О нас</a>
+                        </div>
+                        <div class="link__wrap">
+                            <a class="link linkMobile" href="#">Проекты</a>
+                        </div>
+                        <div class="link__wrap">
+                            <a class="link linkMobile" href="#work">Этапы</a>
+                        </div>
+                        <div class="link__wrap">
+                            <a class="link linkMobile" href="#">Отзывы</a>
+                        </div>
+                        <div class="link__wrap">
+                            <a class="link linkMobile" href="#footer">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- лого -->
+                <div class="logo__wrapper">
+                    <a class="logo__link" href="euclid.html">
+                        <img class="logo__img" src="img/logo_icons/logo.svg" alt="Icon: Euclid">
+                    </a>
+                </div>
+        
+                <!-- навигация на больших мониторах -->
+                <nav class="nav">
+                    <div class="link__wrap">
+                        <a class="link linkDesktop" href="#about">О нас</a>
+                    </div>
+                    <div class="link__wrap">
+                        <a class="link linkDesktop" href="#">Проекты</a>
+                    </div>
+                    <div class="link__wrap">
+                        <a class="link linkDesktop" href="#work">Этапы</a>
+                    </div>
+                    <div class="link__wrap">
+                        <a class="link linkDesktop" href="#">Отзывы</a>
+                    </div>
+                    <div class="link__wrap">
+                        <a class="link linkDesktop" href="#footer">Контакты</a>
+                    </div>
+                    <div class="search__wrap">
+                        <div class="search">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="search__rect" width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                                <path class="search__icon" d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </nav>
+    
+                <div class="search__mobile">
+                    <div class="search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="search__rect" width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                            <path  class="search__icon" d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+    
+                <div class="search__form">
+                    <form class="form__search" action="#">
+                        <input class="input__search" type="text" name="search" placeholder="Что будем искать?" >
+                        <button class="search__button">
+                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="search__rect" width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                                <path  class="search__icon" d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <button class="search__close_btn">
+                            <svg class="search__close_icon" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
+                                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
+                                <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция "Основной слайдер" -->
+
+   <main id="hero" class="hero">
+        <div class="hero__container">
+           
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <img class="slider__img" src="img/main_images/main_image1.webp" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="img/main_images/main_image2.webp" alt="">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="img/main_images/main_image3.webp" alt="">
+                </div>
+            </div>
+
+            <div class="hero__info">
+                <div class="hero__info_wrapper">
+                    <h2 data-wow-duration="1.5s" class="info__title wow animate__animated animate__fadeInDown">Проектные решения <br> любой сложности</h2>
+                    <div data-wow-duration="1.5s" class="info__text_wrapper wow animate__animated animate__fadeInDown">
+                        <p class="info__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                    </div>
+                    <button data-wow-duration="1.5s" class="btn__calculation wow animate__animated animate__fadeInDown">Заказать расчёт</button>
+                </div>
+            </div>
+        </div>
+   </main>
+
+   <!-- Секция "О нас" -->
+
+   <section id="about" class="about">
+        <div class="about__container">
+            <div class="about__title_wrapper">
+                <h2 data-wow-duration="1.5s" class="about__title_main wow animate__animated animate__fadeInDown">О нас</h2>
+                <div data-wow-duration="1.5s" class="about__text_wrapper wow animate__animated animate__fadeInUp">
+                    <p class="about__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+                </div>
+            </div>
+
+            <div data-wow-duration="1.5" class="about__bottom_side wow animate__animated animate__fadeIn">
+                <div class="about__left_side">
+                    <div class="about__image_wrapper">
+                        <img class="about__image" src="img/about_images/about_image.webp" alt="">
+                        <div class="image__info">
+                            <div class="image__info_padding">
+                                <div class="image__info_wrapper">
+                                    <p class="image__text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+                                </div>
+                                <button class="button__moreDetailed">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__right_side">
+                    <div data-wow-duration="2s" class="about__item about__item_active wow animate__animated animate__fadeInRight">
+                        <div class="item__padding item__padding_active">
+                            <div class="item__icon">
+                                <img class="icon" src="img/about_images/about_active_icon.svg" alt="">
+                            </div>
+                            <div class="item__text">
+                                <h4 class="item__text_title">Консультация с широким активом</h4>
+                                <p class="item__text_subtitle">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-wow-duration="2s" class="about__item about__item_up wow animate__animated animate__fadeInRight">
+                        <div class="item__padding item__padding_up">
+                            <div class="item__icon">
+                                <img class="icon" src="img/about_images/about_up_icon.svg" alt="">
+                            </div>
+                            <div class="item__text">
+                                <h4 class="item__text_title">В своём стремлении повысить</h4>
+                                <p class="item__text_subtitle">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+   </section>
+
+   <!-- Секция "Как мы работаем" -->
+   <section id="work" class="work">
+        <div class="work__contaner">
+            <div class="work__top_side">
+                <div data-wow-duration="1.5s" class="work__header_wrap wow animate__animated animate__fadeInDown">
+                    <h2 class="work__header_title">Как мы работаем</h2>
+                </div>
+                <div data-wow-duration="1.5s" class="work__tab wow animate__animated animate__fadeInDown">
+                    <a data-tab="consultation" class="tab tab__one active" href="">1 шаг</a>
+                    <a data-tab="estimate" class="tab tab__two" href="">2 шаг</a>
+                    <a data-tab="contractors" class="tab tab__three" href="">3 шаг</a>
+                    <a data-tab="inspecting" class="tab tab__four" href="">4 шаг</a>
+                </div>
+            </div>
+            <div data-wow-duration="1.5s" class="work__bottom_side wow animate__animated animate__fadeIn">
+                <div id="consultation" class="tab__item active">
+                    <div class="tab__item_padding tab__item_consultation">
+                        <div class="item__leftSide item__leftSide_consultation">
+                            <div class="item__title_wrap">
+                                <h3 class="item__title">Проводим консультацию</h3>
+                            </div>
+                            <div class="item__text_wrap">
+                                <p class="item__text">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                            </div>
+                            <div class="item__buttons">
+                                <button class="button__more">Подробнее</button>
+                                <button class="button__contract">Договор</button>
+                            </div>
+                        </div>
+                        <div class="item__rightSide item__rightSide_consultation">
+                            <div class="item__wrap_image item__wrap_image_consultation">
+                                <img class="image" src="img/work_images/work_image_1.webp" alt="Изображение: Проводим консультацию">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="estimate" class="tab__item">
+                    <div class="tab__item_padding tab__item_estimate">
+                        <div class="item__leftSide item__leftSide_estimate">
+                            <div class="item__title_wrap">
+                                <h3 class="item__title">Составляем смету</h3>
+                            </div>
+                            <div class="item__text_wrap">
+                                <p class="item__text">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+                            </div>
+                            <div class="item__buttons">
+                                <button class="button__more">Подробнее</button>
+                                <button class="button__contract">Договор</button>
+                            </div>
+                        </div>
+                        <div class="item__rightSide item__rightSide_estimate">
+                            <div class="item__wrap_image item__wrap_image_estimate">
+                                <img class="image" src="img/work_images/work_image_2.webp" alt="Изображение: Составляем смету">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contractors" class="tab__item">
+                    <div class="tab__item_padding tab__item_contractors">
+                        <div class="item__leftSide item__leftSide_contractors">
+                            <div class="item__title_wrap">
+                                <h3 class="item__title">Привлекаем подрядчиков</h3>
+                            </div>
+                            <div class="item__text_wrap">
+                                <p class="item__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+                            </div>
+                            <div class="item__buttons">
+                                <button class="button__more">Подробнее</button>
+                                <button class="button__contract">Договор</button>
+                            </div>
+                        </div>
+                        <div class="item__rightSide item__rightSide_contractors">
+                            <div class="item__wrap_image item__wrap_image_contractors">
+                                <img class="image" src="img/work_images/work_image_3.webp" alt="Изображение: Привлекаем подрядчиков">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inspecting" class="tab__item">
+                    <div class="tab__item_padding tab__item_inspecting">
+                        <div class="item__leftSide item__leftSide_inspecting">
+                            <div class="item__title_wrap">
+                                <h3 class="item__title">Инспектируем все этапы работ</h3>
+                            </div>
+                            <div class="item__text_wrap">
+                                <p class="item__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+                            </div>
+                            <div class="item__buttons">
+                                <button class="button__more">Подробнее</button>
+                                <button class="button__contract">Договор</button>
+                            </div>
+                        </div>
+                        <div class="item__rightSide item__rightSide_inspecting">
+                            <div class="item__wrap_image item__wrap_image_inspecting">
+                                <img class="image" src="img/work_images/work_image_4.webp" alt="Изображение: Инспектируем все этапы работ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!-- Секция "Часто задаваемые вопросы" -->
+   <section id="question" class="questions">
+    <div class="questions__container">
+        <div data-wow-duration="2s" class="question__wrap_title wow animate__animated animate__fadeInDown">
+            <h2 class="question__title">Часто задаваемые вопросы</h2>
+        </div>
+        <div class="accordion">
+            <div class="accordion__block">
+                <!-- 1 -->
+                <div data-wow-duration="2s" class="accordion__item wow animate__animated animate__fadeInLeft">
+                    <div data-id="accordion-1" id="accordion-1" class="accordion__header">
+                        <div class="accordion__line"></div>
+                        <div class="accordion__header_wrap">
+                        <p class="accordion__title">Из чего формируется конечная стоимость проекта?</p>
+                        <div class="accordion__pin">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion__text">
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                        </p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div data-wow-duration="2s" class="accordion__item wow animate__animated animate__fadeInRight">
+                    <div data-id="accordion-2" id="accordion-2" class="accordion__header">
+                        <div class="accordion__line"></div>
+                        <div class="accordion__header_wrap">
+                        <p class="accordion__title">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</p>
+                        <div class="accordion__pin">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion__text">
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                        </p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div data-wow-duration="2s" class="accordion__item wow animate__animated animate__fadeInLeft">
+                    <div data-id="accordion-3" id="accordion-3" class="accordion__header">
+                        <div class="accordion__line"></div>
+                        <div class="accordion__header_wrap">
+                        <p class="accordion__title">Я выбираю между разными компаниями. В чём ваше отличие?</p>
+                        <div class="accordion__pin">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion__text">
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                        </p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div data-wow-duration="2s" class="accordion__item wow animate__animated animate__fadeInRight">
+                    <div data-id="accordion-4" id="accordion-4" class="accordion__header">
+                        <div class="accordion__line"></div>
+                        <div class="accordion__header_wrap">
+                        <p class="accordion__title">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</p>
+                        <div class="accordion__pin">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion__text">
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                        </p> 
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div data-wow-duration="2s" class="accordion__item wow animate__animated animate__fadeInLeft">
+                    <div data-id="accordion-5" id="accordion-5" class="accordion__header">
+                        <div class="accordion__line"></div>
+                        <div class="accordion__header_wrap">
+                        <p class="accordion__title">Могу ли я вернуть деньги на каком-либо из этапов работ?</p>
+                        <div class="accordion__pin">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion__text">
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                        </p>
+                    </div>
+                    <div class="accordion__line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- Секция "Подвал сайта" -->
+   <footer id="footer" class="footer">
+        <div class="footer__container">
+            <div class="footer__links_wrapper">
+                <div data-wow-duration="2s" class="footer__logo_wrapper wow animate__animated animate__fadeInDown">
+                    <a class="footer__logo" href="euclid.html">
+                        <img src="img/logo_icons/logo_footer.svg" alt="Logo: Euclid" class="logo">
+                    </a>
+                </div>
+                <div class="footer__links">
+                    <div data-wow-duration="2s" class="footer__link_wrapper wow animate__animated animate__fadeInDown">
+                        <a href="#about" class="footer__link linkDesktop">О нас</a>
+                    </div>
+                    <div data-wow-duration="2s" class="footer__link_wrapper wow animate__animated animate__fadeInDown">
+                        <a href="#" class="footer__link linkDesktop">Проекты</a>
+                    </div>
+                    <div data-wow-duration="2s" class="footer__link_wrapper wow animate__animated animate__fadeInDown">
+                        <a href="#" class="footer__link linkDesktop">Отзывы</a>
+                    </div>
+                    <div data-wow-duration="2s" class="footer__link_wrapper wow animate__animated animate__fadeInDown">
+                        <a href="#" class="footer__link linkDesktop">Договор оферты</a>
+                    </div>
+                    <div data-wow-duration="2s" class="footer__link_wrapper wow animate__animated animate__fadeInDown">
+                        <a href="#" class="footer__link linkDesktop">Договор подряда</a>
+                    </div>
+                    <div data-wow-duration="2s" class="footer__link_wrapper wow animate__animated animate__fadeInDown">
+                        <a href="#" class="footer__link linkDesktop">Конфиденциальность</a>
+                    </div>
+                    <div data-wow-duration="2s" class="footer__link_wrapper wow animate__animated animate__fadeInDown">
+                        <a href="#" class="footer__link linkDesktop">Партнёрское соглашение</a>
+                    </div>
+                </div>
+                <div data-wow-duration="2s" class="footer__network_links wow animate__animated animate__fadeInUp">
+                    <div class="network__link_wrapper">
+                        <a class="network__link" href="">
+                            <img src="img/network_icons/network_icon_fb.svg" alt="Icon: Фейсбук" class="network__icon">
+                        </a>
+                    </div>
+                    <div class="network__link_wrapper">
+                        <a class="network__link" href="">
+                            <img src="img/network_icons/network_icon_vk.svg" alt="Icon: Вконтакте" class="network__icon">
+                        </a>
+                    </div>
+                    <div class="network__link" class="network__link_wrapper">
+                        <a href="">
+                            <img src="img/network_icons/network_icon_inst.svg" alt="Icon: Инстаграмм" class="network__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-duration="2s" class="footer__form_wrapper wow animate__animated animate__fadeInRight">
+                <form action="#" class="form">
+                    <h2 class="form__title">Оставить заявку</h1>
+                    <div class="input__wrapper input__wrapper_name">
+                        <input type="name" name="ФИO" required class="input input__name" placeholder="Фамилия, имя и отчество*">
+                    </div>
+                    <div class="input__wrapper input__wrapper_email">
+                        <input type="email" name="Ел. почта" required class="input input__email" placeholder="E-mail*">
+                    </div>
+                    <div class="textarea__wrapper_message">
+                        <textarea name="Сообщение" id="" required placeholder="Сообщение" class="textarea textarea__message"></textarea>
+                    </div>
+                    <div class="button__submit_wrapper">
+                        <button class="submit button__submit">Отправить</button>
+                        <div class="input__checkbox_wrapper">
+                            <label class="input__label" for="dataProcessing">
+                                <input id="dataProcessing" required type="checkbox" name="Обработка данных: " class="input__checkbox">
+                                <div class="input__face_wrap">
+
+                                </div>
+                                <p class="text__dataProcessing">Согласен на обработку данных</p>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer__info_wrapper">
+                <p class="footer__info_text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
+            </div>
+        </div>
+   </footer>
+
+    <script src="libs/wow.min.js"></script>
+    <script>
+        new WOW().init(); 
+    </script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/jquery-3.6.3.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="js/scrips.js"></script>
+</body>
+</html>
