@@ -7,3 +7,5 @@
 - JQuery
 - Slick Slider
 - Gsap
+
+Ссылка на проект: https://syomin-ilua.github.io/euclid/euclid.html
